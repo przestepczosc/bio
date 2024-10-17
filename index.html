@@ -8,17 +8,36 @@
     <title></title>
 </head>
 <body>
-    <video autoplay muted loop>
-        <source src="./assets/background-pc.mp4" type="video/mp4" width="100%">
-    </video>
-    <div class="overlay"></div>
 
-    <div class="container flex">
-        <div class="card flex">
+    <video id="background-video" autoplay muted loop>
+        <source src="./assets/background-pc.mp4" type="video/mp4">
+    </video>
+
+    <audio id="background-music" src="./assets/background.mp3" loop></audio>
+
+    <div id="enter-overlay" class="flex">
+        <div id="click-to-enter" class="flex" onclick="enterSite()">
+            <div class="bars flex">
+                <div class="bar"></div>
+                <div class="bar"></div>
+                <div class="bar"></div>
+                <div class="bar"></div>
+                <div class="bar"></div>
+                <div class="bar"></div>
+                <div class="bar"></div>
+                <div class="bar"></div>
+                <div class="bar"></div>
+            </div>
+            <p>click to enter</p>
+        </div>
+    </div>
+
+    <div id="content" class="container flex">
+        <div id="card" class="card flex">
 
             <div class="profile">
                 <img src="./assets/pfp.jpg" alt="profilowe">
-                <p> kropel </p>
+                <p>kropel</p>
             </div>
 
             <div class="description">
@@ -31,16 +50,16 @@
 
             <div class="links">
                 <a href="https://discord.com/users/1108025173338226789"> <img src="./assets/discord.png" alt="discord" width="64px" height="64px"> </a>
-                <a href="https://discord.com/invite/nitroski"> <img src="./assets/nitro.png" alt=".gg/nitroski" width="64px" height="64px"> </a>
-                <a href="https://boostpanel.pl"> <img src="./assets/boost.png" alt="boostpanel.pl" width="64px" height="64px"> </a>
-                <a href="https://vouches.kropel.lol"> <img src="./assets/check.png" alt="vouches" width="64px" height="64px"> </a>
-                <a href="https://www.last.fm/user/krxpel"> <img src="./assets/lastfm.png" alt="lastfm" width="64px" height="64px"> </a>
-                <a href="https://t.me/b0rderkicia"> <img src="./assets/telegram.png" alt="telegram" width="64px" height="64px"> </a>
+                <a href="https://discord.gg/boostpanel"> <img src="./assets/shop.png" alt=".gg/nitroski" width="64px" height="64px"> </a>
+                <a href="https://boostpanel.pl"> <img src="./assets/boostpanel.png" alt="boostpanel.pl" width="64px" height="64px"> </a>
+                <a href="https://myvouch.es/kropel"> <img src="./assets/vouch.png" alt="vouches" width="64px" height="64px"> </a>
             </div>
         </div>
+        <p class="watermark">coded by <a href="https://discord.com/users/1108025173338226789">kropel.</a> </p>
     </div>
+
+    <script src="./js/loading.js"></script>
     <script src="./js/typewriter-text.js"></script>
     <script src="./js/typewriter.js"></script>
-    <script src="./js/overlay.js"></script>
 </body>
 </html>
