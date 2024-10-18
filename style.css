@@ -228,8 +228,8 @@ video{
     cursor: pointer;
     z-index: 10;
     flex-direction: column;
-    width: 35%;
-    height: 30%;
+    width: 45%;
+    height: 50%;
 }
 
 #enter-overlay > #click-to-enter > p{
